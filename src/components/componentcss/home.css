@@ -109,6 +109,8 @@
         background-color: #071f3a;
     }
     .home-container {
+        margin-right: 20px;
+        margin-left: -30px;
         padding: 20px;
         background-color: #071f3a;
         display: flex;
@@ -171,5 +173,6 @@
         margin-top: 20px;
         margin-left: 0;
     }
+    
 }
 
