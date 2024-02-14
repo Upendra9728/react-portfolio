@@ -1,0 +1,98 @@
+/* navbar.css */
+.nav {
+    height: 70px;
+    background-color: #063970;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav.scrolled {
+    background-color: rgba(6, 57, 112, 0.9);
+}
+
+.navleft img {
+    height: 70px;
+    user-select: none;
+}
+
+.navright {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.navright .links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navright .links li {
+    margin-left: 20px;
+}
+
+.navright .links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navright .links li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    overflow: hidden;
+}
+
+.navright .links li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: aqua;
+    transition: width 0.3s ease-in-out;
+}
+
+.navright .links li a.active::before {
+    width: 100%;
+}
+
+.navright .links li a:hover::before {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .navright {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+    .navright .links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 0.2px;
+    }
+    .navright .links li a {
+        font-size: 12px;
+    }
+    .navleft img {
+        height: 50px;
+        user-select: none;
+    }
+    
+}

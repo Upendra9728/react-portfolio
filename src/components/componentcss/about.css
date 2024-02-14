@@ -1,0 +1,45 @@
+.about-container
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+    background-color:#071f3a;
+    color: white;
+}
+.about-container h1
+{
+    color:#2596be;
+}
+.colorize {
+    background-color:#224975;
+    padding: 20px;
+    border-radius: 5px;
+}
+.colorize:hover
+{
+    background-color: #3977be;
+    transition: ease-in-out 500ms;
+    transform: scale(1.07);
+}
+.education{
+    display: flex;
+    gap:40px;
+    margin-top: 45px;
+}
+.adde{
+    color: #2596be;
+}
+@media (max-width: 600px) {
+    .about-container {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .education {
+        flex-direction: column; /* Change flex-direction to column for smaller screens */
+        gap: 20px; /* Adjust gap between items for smaller screens */
+        margin-top: 30px; /* Adjust margin-top for smaller screens */
+    }
+}

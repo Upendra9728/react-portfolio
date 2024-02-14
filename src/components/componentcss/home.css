@@ -1,0 +1,175 @@
+.home-container {
+    margin-top: 70px;
+    display: flex;
+    color: rgb(255, 253, 253);
+    height:35rem;
+}
+
+.homeleft {
+    display: flex;
+    flex-direction: column;
+    background-color: #071f3a;
+    flex: 1; /* This makes .homeleft expand to fill available space */
+    height: auto; /* Adjusted to auto */
+    width: 70rem;
+    padding: 20px;
+    padding-left: 200px;
+}
+
+.homeleft h1 {
+    font-size: 55px;
+    color: #cce7e8;
+}
+.homeleft h2{
+    color:#6ba551;
+}
+
+.aboutme {
+    margin-top: 20px;
+}
+
+.homeright {
+    display: flex;
+    flex-direction: column;
+    background-color: #071f3a;
+    flex: 1; /* This makes .homeright expand to fill available space */
+    height: auto; /* Adjusted to auto */
+    width: 20rem;
+    padding: 30px;
+}
+
+.buttonn {
+    height: 50px;
+    width: 140px;
+    color: white;
+    background-color: #2596be;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.buttonn:hover {
+    background-color: #20789e; /* Darker shade on hover */
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.resume {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.mainimg {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Add a transition for smooth hover effect */
+    filter: brightness(90%);
+}
+
+.mainimg:hover {
+    transform: scale(1.01); /* Scale up the image slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow strength on hover */
+}
+.socialmedia {
+    margin-top: 40px;
+    display: flex;
+    align-items: center; /* Center the icons vertically */
+}
+
+.socialmedia a {
+    margin: 0 18px; /* Add some spacing between the icons */
+}
+.socialmedia a:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+.socialmedia img {
+    width: 40px; /* Set the width */
+    height: 40px; /* Set the height */
+}
+.homeright a{
+    text-decoration: none;
+}
+.gitimg{
+    background-color:white;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+/* Add the mobile-specific styles at the bottom of your existing CSS file */
+@media (max-width: 600px) {
+    body{
+        background-color: #071f3a;
+    }
+    .home-container {
+        padding: 20px;
+        background-color: #071f3a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homeleft {
+        margin-top: 250px;;
+        width: 100%;
+        padding: 20px;
+        margin-left: 50px;
+    }
+
+    .homeleft h1 {
+        font-size: 40px;
+    }
+
+    .homeleft h2 {
+        font-size: 25px;
+    }
+
+    .homeright {
+        width: 100%;
+        padding: 30px;
+        
+    }
+    .mainimg{
+        margin-left: 25%;
+    }
+    .buttonn {
+        height: 40px;
+        width: 120px;
+        
+    }
+    .hel{
+        margin-top: 10%;
+        margin-left: 40%;
+    }
+
+    .mainimg {
+        height: 250px;
+        width: 250px;
+    }
+    .socialmedia {
+        margin-top: 20px;
+    }
+
+    .socialmedia a {
+        margin: 0 10px;
+    }
+
+    .socialmedia img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .resume {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
