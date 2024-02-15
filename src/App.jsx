@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-portfolio">
       <div className="App">
         <Navbar />
         <Routes>
