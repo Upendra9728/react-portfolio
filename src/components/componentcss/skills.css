@@ -57,6 +57,7 @@
         align-items: center;
         justify-content: center;
         gap:10px; /* Distribute items evenly across the row */
+        user-select: none;
     }
     .skill-tag {
         display: flex;

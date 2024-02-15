@@ -41,5 +41,6 @@
         flex-direction: column; /* Change flex-direction to column for smaller screens */
         gap: 20px; /* Adjust gap between items for smaller screens */
         margin-top: 30px; /* Adjust margin-top for smaller screens */
+        user-select: none;
     }
 }

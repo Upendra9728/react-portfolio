@@ -155,9 +155,11 @@
     .mainimg {
         height: 250px;
         width: 250px;
+        user-select: none;
     }
     .socialmedia {
         margin-top: 20px;
+        user-select: none;
     }
 
     .socialmedia a {
