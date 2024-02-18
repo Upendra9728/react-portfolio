@@ -3,22 +3,24 @@ import "./componentcss/work.css";
 const projects = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Face Mask Detector",
     description: "Face Mask Detection using Python, OpenCV and Keras.",
-    link: "https://example.com/project1",
+    link: "https://drive.google.com/drive/folders/10XIDdsfZmescgfwzPy2Of4wpY_1XDHc_?usp=sharing",
+    demo: "https://drive.google.com/file/d/1PzPO1-r3pnnsE4DX7eofMwaqJTBvSuou/view?usp=sharing",
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "LED Distance Indicator",
     description: "LED Distance Indicator using Ultrasonic Sensor & Buzzer.",
-    link: "https://example.com/project2",
+    link: "https://github.com/Upendra9728/MyProjects.git",
+    demo:"https://drive.google.com/file/d/17jFMkOeFurngfy1QQI879aNqB6hx5HK0/view?usp=sharing",
   },
   {
     id: 3,
-    title: "Project 3",
-    description:
-      "Amazon Clone Frontend Project using HTML, CSS and Javascript.",
-    link: "https://example.com/project3",
+    title: "Amazon Clone",
+    description:"Amazon Clone Frontend Project using HTML, CSS and Javascript.",
+    link: "https://github.com/Upendra9728/amazon-clone.git",
+    demo:"https://upendra9728.github.io/amazon-clone/",
   },
 ];
 
@@ -71,7 +73,10 @@ const Work = () => {
             <div key={project.id} className="project">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <div className="see">
               <a href={project.link}>View Project</a>
+              <a href={project.demo}>Demo</a>
+              </div>
             </div>
           ))}
         </div>
